@@ -352,24 +352,29 @@ right:1rem;
 }
 .products .box-container .box .flex{
     display: flex;
-    /* gap:2rem; */
-    justify-content:space-between;
+    gap:1rem;
+    /* justify-content:space-between; */
     align-items: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 .products .box-container .box .flex .price{
     font-size: 3rem;
     color: var(--black);
+    margin-right: auto;
 }
 .products .box-container .box .flex .price .span{
     color: var(--black);
     font-size: 2rem;
 }
 .products .box-container .box .flex .qty{
-    padding: 1.4rem;
+    padding: 1rem;
     border: var(--border);
     font-size: 1.8rem;
     color: var(--black);
+}
+.products .more-btn {
+    margin-top: 2rem;
+    text-align: center;
 }
 .section_form form{
     display: flex;
@@ -393,6 +398,73 @@ right:1rem;
     background-color: var(--yellow);
     color: var(--black);
 }
+.products .box-container .box .flex .fa-edit{
+     width: 5rem;
+     background-color: var(--yellow);
+     color: var(--black);
+     cursor: pointer;
+     font-size: 1.8rem;
+     height: 4.5rem;
+     border: var(--border);
+     
+}
+.products .box-container .box .flex .fa-edit:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+.products .box-container .box .fa-times{
+ position: absolute;
+ top: 1rem;
+ right: 1rem;
+ background-color: red;
+ color: var(--white);
+ width: 1.8rem;
+ height: 2rem;
+ border:var(var(--border));
+ cursor: pointer;
+}
+.products .box-container .box .fa-times:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+.products .box-container .box .sub-total{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.products .box-container .box .sub-total span{
+    color: var(--green);
+}
+.products .cart-total{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.products .cart-total p{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.products .cart-total span{
+    color: var(--green);
+}
+.products .btn:hover{
+ background-color: var(--black);
+ color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer .begin {
     border-top: var(--border);
 }
